@@ -1,3 +1,4 @@
+
 package com.aa.misc;
 
 import org.springframework.context.ApplicationContext;
@@ -15,6 +16,11 @@ public class Greetings {
 		
 		System.out.println(mystudent.getStudent().getName());
 		System.out.println(mystudent.getAddress().getAddress());
+		
+		StudentAddress mystudent1 = (StudentAddress) studentContext.getBean("stdadd2");
+		
+		System.out.println(mystudent1.getStudent().getName());
+		System.out.println(mystudent1.getAddress().getAddress());
 	}
 
 }
