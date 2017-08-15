@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,6 +16,12 @@
 		<property name="student" ref="stud1"/>
 		<property name="address" ref="addr1"/>
  	</bean>
+	
+    <bean id="stdadd2" class="com.aa.misc.StudentAddress" scope="prototype">
+		 <constructor-arg index="0" ref="stud2"/>
+		 <constructor-arg index="1" ref="addr2"/>
+ 	</bean>
+    
     
     
     
